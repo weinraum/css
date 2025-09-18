@@ -3,7 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="<?= base_url('assets/app.min.css') ?>">
+<link rel="preload" href="/_/fonts/titillium-web-v17-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/_/fonts/titillium-web-v17-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/_/fonts/roboto-v30-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="/_/css/app.min.css?v=1">
 
     <?php // Titel & Meta aus $pageTitle / $metaDescription ?>
     <title><?= esc($pageTitle ?? 'weinraum') ?></title>
