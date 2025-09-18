@@ -1,0 +1,36 @@
+/* Minimal Date Picker – no dependencies */
+.date-mini {
+  position: absolute;
+  z-index: 2147483600;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+  padding: 8px;
+  width: 280px;
+  font: 14px/1.4 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+.date-mini .dm-head {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 6px;
+}
+.date-mini .dm-head .dm-nav {
+  display: grid; grid-auto-flow: column; gap: 6px;
+}
+.date-mini button.dm-btn {
+  border: 0; background: #f2f2f2; border-radius: 8px; padding: 6px 10px; cursor: pointer;
+}
+.date-mini .dm-title { font-weight: 600; }
+.date-mini .dm-grid {
+  display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px;
+}
+.date-mini .dm-dow {
+  text-align: center; opacity: .6; font-size: 12px; margin-bottom: 2px;
+}
+.date-mini button.dm-day {
+  border: 0; background: #fff; padding: 6px 0; border-radius: 8px; cursor: pointer;
+}
+.date-mini button.dm-day:hover { background: #f2f6ff; }
+.date-mini button.dm-day[aria-current="date"] { outline: 2px solid #0d6efd33; }
+.date-mini button.dm-day[aria-selected="true"] { background: #0d6efd; color: #fff; }
+.date-mini button.dm-day:disabled { color: #bbb; background: #fafafa; cursor: not-allowed; }
